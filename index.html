@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lost and Found Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#report">Report Lost Item</a></li>
+                <li><a href="#found">Report Found Item</a></li>
+                <li><a href="#recent">Recent Listings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Search Bar -->
+        <input type="text" id="search-bar" placeholder="Search items...">
+
+        <!-- Report Lost Item -->
+        <section id="report" class="form-section">
+            <h2>Report a Lost Item</h2>
+            <form id="lost-form">
+                <label for="lost-item">Item Description</label>
+                <input type="text" id="lost-item" required>
+
+                <label for="lost-location">Last Seen Location</label>
+                <input type="text" id="lost-location" required>
+
+                <label for="contact-info">Your Contact Info</label>
+                <input type="text" id="contact-info" required>
+
+                <button type="submit">Submit Lost Item</button>
+            </form>
+        </section>
+
+        <!-- Report Found Item -->
+        <section id="found" class="form-section">
+            <h2>Report a Found Item</h2>
+            <form id="found-form">
+                <label for="found-item">Item Description</label>
+                <input type="text" id="found-item" required>
+
+                <label for="found-location">Found Location</label>
+                <input type="text" id="found-location" required>
+
+                <label for="contact-info-found">Your Contact Info</label>
+                <input type="text" id="contact-info-found" required>
+
+                <button type="submit">Submit Found Item</button>
+            </form>
+        </section>
+
+        <!-- Recent Listings -->
+        <section id="recent">
+            <h2>Recent Lost & Found Listings</h2>
+            <div class="listing">
+                <h3>Lost Items</h3>
+                <ul id="lost-items-list"></ul>
+            </div>
+            <div class="listing">
+                <h3>Found Items</h3>
+                <ul id="found-items-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lost and Found Portal | Contact: <a href="mailto:support@university.com">support@university.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
